@@ -1,0 +1,138 @@
+/*------------------Se crea el fondo oscuro al presionar boton--------------*/
+
+.menu .overlay{  
+    background: rgb(0,0,0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.menu .overlay.active{
+    visibility: visible;
+}
+
+.menu .popup{
+    background: #294264;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,.3);
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+    transition: .7s ease all;
+    transform: scale(0.7);
+}
+
+.menu .popup .btn-cerrar-popup{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
+
+.menu .popup .btn-cerrar-popup:hover{
+    color: #000;
+}
+
+.menu .popup h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.menu .popup h2{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.menu .popup form .emergente-inputs{
+    opacity: 0;
+}
+
+.menu .popup form .emergente-inputs input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    background: #dadde2;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+}
+
+
+.menu .popup form .btn-submit{
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5e7de3;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.menu .popup form .btn-submit:hover{
+    background: #294264;
+    transition: .5s ease all;
+    border-radius: 10px;
+}
+
+
+
+/*Animaciones del popup*/
+
+.menu .popup.active{ opacity: 1; transform: scale(1);}
+.menu .popup.active h1{ animation: entradaTitulo .8s ease .5s forwards;}
+.menu .popup.active h2{ animation: entradaSubtitulo .8s ease .5s forwards;}
+.menu .popup.active .emergente-inputs{ animation: entradaInputs 1s ease 1s forwards;}
+
+@keyframes entradaTitulo{
+    form{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo{
+    form{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+

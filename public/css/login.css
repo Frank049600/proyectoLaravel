@@ -1,0 +1,280 @@
+body{
+    background:#3c6382;
+}
+
+/*---------------------------------------------------- Titulo -------------------------*/
+.titulo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: #00ff7a;
+    background: #012026;
+    position: fixed;
+    width: calc(100vw - 30px);
+    padding-right: 10px;
+    top: 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.titulo .logo{
+    width: 90px;
+    height: 100px;
+}
+
+.titulo p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding-right: 10%;
+}
+
+
+/*----------------------------------------------------Menú -------------------------*/
+.menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+
+.menu ul li {
+    background-color:#115518;
+}
+   
+   /* enlaces del menu */
+   
+.menu ul a {
+    display: block;
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:5px;
+}
+   
+   /* items del menu */
+   
+.menu ul li {
+    position:relative;
+    float:left;
+    padding:0;
+}
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+.menu ul li:hover {
+    background:#0d3f12;
+    transition: all 0.5s;
+}
+
+/* menu desplegable */
+
+.menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+   
+   /* items del menu desplegable */
+   
+.menu ul ul li {
+    float:none;
+    width:300px;
+}
+   
+   /* enlaces de los items del menu desplegable */
+   
+.menu ul ul a {
+    line-height:90%;
+    padding:10px 15px;
+}
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+.menu ul li:hover > ul {
+    display: block;
+    transition: all 0.5s;
+}
+
+.menu .login{  /* Marca la opción para señalar en que pantalla esta*/
+    background: #0d3f12;
+    text-decoration:overline;
+}
+
+.compra{
+    background: #115518;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.7s;
+}
+
+.compra:hover{
+    background: #009432;
+    border-radius: 2em;
+    transition: all 0.5s;
+}
+.compra .compra_bolsa{
+    width: 50px;
+    height: 50px;
+}
+
+.intermedio{
+    height: 100px;
+    width: 100%;
+    background: #000e11;
+}
+
+.intermedio ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.intermedio ul li{
+    position:relative;
+    float:left;
+    padding:0;
+    display: flex;
+    line-height:90%;
+    padding:10px 15px;
+    padding: 35px;
+    margin-left: 12%;
+}
+
+.titulo .search .busqueda{
+    background: #115518;
+    border-radius: 5px;
+    border: none;
+}
+
+.titulo .search .busqueda:hover{
+    background: #009432;
+    transition: all 0.7s;
+}
+
+.titulo .search .busqueda .lupa{
+    width: 50px;
+    height: 30px;
+    position: left;
+}
+
+.titulo .search .barraBusqueda{
+    border-radius: 3px;
+    border-style: none;
+    color: #00ff7a;
+    background: #0d3840;
+    height: 35px;
+    margin-left: 3px;
+}
+
+/*---------------------------------- CONTENEDOR 1---------------------------------------------------*/
+.contenedor1{ 
+    background-color: #012026;
+    width: 80%; 
+    height: 750px; 
+    margin-top: 8em;
+    margin-left: 10%;
+    border-radius: 0.3em;
+}
+
+.contenedor1 .titulo_login{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    font-weight:  bolder;
+    padding: 20px 0px 30px 0px;
+}
+
+.contenedor1 .fondo_text{
+    background:#009432;
+    width: 70%;
+    height: 80px;
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 0 0 7rem 7rem;
+    box-shadow: 0 10px #999;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.20);
+}
+
+/*--------------------------------------ContCentral-------------------------------*/
+
+#Contenedor{
+    width: 350px;
+    height: 380px;
+    margin: 20px auto;
+    background-color: #718093;
+    border-radius:10px;
+    padding: 5px 15px 0px 15px;
+}
+
+.Icon span img{
+    width: 30%;
+    height: 30%;
+}
+
+.Icon{
+     margin-bottom:10px; 
+     color: black;
+     font-size: 50px;
+     text-align: center;
+}
+
+.form input{
+    margin-left: 5%;
+    padding: 0px 0px 0px 0px;
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(20, 19, 19, 0.705);
+}
+
+.IngresoLog, .RegistroLog{
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    background-color: #115518;
+    margin-left: 15%;
+    cursor: pointer;
+    border: none;
+    width: 90px;
+    height: 50;
+    transition: all 0.7s;
+}
+
+.RegistroLog:hover{
+    background: #718093;
+    transition: all 0.7s;
+    color: #1B1464;
+    border-radius: 1em;
+}
+
+.IngresoLog:hover{
+    background: #718093;
+    transition: all 0.7s;
+    color: #1B1464;
+    border-radius: 1em;
+}
+
+
+#opcion a{
+    text-align: center;
+    padding: 10px 40px;
+    margin-left: 13%;
+    text-decoration:none;
+    font-size: 14px;
+    color: #020202;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#opcion a:hover{
+    color: red;
+}
